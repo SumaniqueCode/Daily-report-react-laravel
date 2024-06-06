@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 1px black solid !important;
+}
+
+.navbar-nav a {
+  font-size: 14px;
+}
+
+.navbar-nav a:hover {
+  background-color: #e2e2e2;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.dotted-box-button {
+  display: inline-block;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  height: 29vh;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.dotted-box-button:hover {
+  border: 1px dashed #a60cff;
+  background-color: #cccccc;
+  transition: 0.4s ease-in-out;
+}
+
+.plus-sign {
+  font-size: 14px;
+}
+
+.breadcrumb {
+  margin: 0 !important;
+}
+
+.breadcrumb-item {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.homepage .tasks .card .title {
+  font-size: 12px !important;
+  margin-bottom: 2px;
+  text-align: start;
+}
+
+.homepage .tasks .card .time-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage .tasks .card .time-board span {
+  font-size: 10px;
+}
+
+.card {
+  height: auto;
+  border-radius: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  transition: 0.4s ease-in-out;
+  background-color: rgb(235, 235, 235) !important;
+}
+
+.setting .card:hover {
+}
+
+.card-title {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.card-title:hover {
+  color: #a60cff;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-color: #9ca3af;
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.timestamp {
+  color: #1f2937;
+}
+
+/* setting */
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #1f2937;
+  color: #1f2937;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link {
+  color: #1f2937;
+}
+
+.profile-picture .avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* forms css */
+
+label {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+.form-control:focus {
+  color: black;
+  background-color: var(--bs-body-bg);
+  border-color: #3b3b3b;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0);
+}
+
+/* teams css */
+
+.teams .avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.teams .card .title {
+}
+
+.teams .card .sub-title {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* project details */
+.project-details .dotted-box-button {
+  display: inline-block;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  height: 22vh;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.project-details .dotted-box-button:hover {
+  border: 1px dashed #a60cff;
+  background-color: #cccccc;
+  transition: 0.4s ease-in-out;
+}
+
+.project-member .dotted-box-button {
+  display: inline-block;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  height: 13vh;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.project-member .dotted-box-button:hover {
+  border: 1px dashed #a60cff;
+  background-color: #cccccc;
+  transition: 0.4s ease-in-out;
+}
+
+/* project board */
+
+.kanban-baord {
+  overflow: scroll;
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.kanban-column {
+  background-color: #dfdfdf;
+  width: 540px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.kanban-task-column {
+  height: 60vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.kanban-task {
+  background-color: white;
+  padding: 10px;
+  font-size: 13.4px;
+  font-weight: 600;
+  color: #222222;
+  gap: 10px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.is-dragging {
+  opacity: 0.8 !important;
+  background-color: #3b3b3b !important;
+}

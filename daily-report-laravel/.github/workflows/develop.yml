@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - "develop"
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    # - name: create .env file
+    #   run: touch .env
+
+    # - name: copy .env.master to .env
+    #   run: cp .env.example .env
+
+    - name: 📂 Sync files test
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ftp.hunchhadigital.com
+        username: u839612267.hunchhademo
+        password: Ultimate@22
