@@ -22,7 +22,7 @@
     
     <p>You have been invited to join a team from Daily-Report App.</p>
         <p>Please click the link below to join the team.</p>
-        <a href="https://pms.hunchhadigital.com/api/accept-team-invitation/{{$id}}" style="background: #4CAF50; border-radius: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px; text-align: center; display: inline-block; text-decoration: none; color: #fff; transition: background 0.3s;">Accept Team Invitation</a>
+        <a href="http://localhost:5173/api/accept-team-invitation/{{$id}}" style="background: #4CAF50; border-radius: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px; text-align: center; display: inline-block; text-decoration: none; color: #fff; transition: background 0.3s;">Accept Team Invitation</a>
         <p>Thank you!</p>
         </body>
 </html>
