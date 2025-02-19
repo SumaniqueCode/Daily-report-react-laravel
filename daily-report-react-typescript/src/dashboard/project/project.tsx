@@ -14,7 +14,7 @@ import { fetchTeam } from "../../redux/slices/teamSlice";
 
 const Project = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const dispatch = useAppDispatch();
